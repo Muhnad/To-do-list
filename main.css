@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: #ddd;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.todo {
+    width: 80%;
+    min-height: 100vh;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    color: #2c3e50;
+    background: #fff;
+}
+
+.todo h1 {
+    font: bold 35px monospace;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.todo input.todo-input {
+    width: 60%;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+.todo .add-btn {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px 50px;
+    background: #46b98a;
+    color: #fff;
+    font: bold 18px monospace;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+ol.todo-list { padding: 0 40px }
+
+ol.todo-list li {
+    padding: 20px 0 10px;
+    font: bold 18px monospace;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+/* span refer to close sign (X) */
+ol.todo-list span {
+    float: right;
+    font: bold 18px monospace;
+    cursor: pointer;
+}
+
+/*For Mobile*/
+@media screen and (max-width: 480px) {
+    .todo {
+        width: 100%;
+        padding: 40px 10px
+    }
+}
+
+/*For Tablet*/
+@media screen and (max-width: 800px) {
+    .todo input.todo-input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
