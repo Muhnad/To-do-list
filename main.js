@@ -24,6 +24,9 @@ addBtn.addEventListener("click", function () {
     li.appendChild(span);       // append the span in li element.
     todoList.appendChild(li);   // append the li elemnt in the todo-list.
     
+    // Reset the value of the input
+    todo.value = "";
+    
     // when clik on span (x) remove the todo.
     span.addEventListener("click", function () {
         this.parentNode.remove();
