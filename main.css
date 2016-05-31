@@ -34,7 +34,7 @@ body {
 }
 
 .todo input.todo-input {
-    width: 60%;
+    width: 40%;
     padding: 12px 20px;
     border: 1px solid #ddd;
 }
@@ -54,6 +54,7 @@ body {
 ol.todo-list { padding: 20px 40px }
 
 ol.todo-list li {
+    position: relative;
     padding: 20px 0 10px;
     font: bold 18px monospace;
     color: #000;
@@ -65,7 +66,7 @@ ol.todo-list span {
     font: bold 18px monospace;
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 20px;
 }
 ol.todo-list span.remove { right: 5px }
 ol.todo-list span.date { right: 50px }
