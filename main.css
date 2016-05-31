@@ -51,7 +51,7 @@ body {
     outline: none;
 }
 
-ol.todo-list { padding: 0 40px }
+ol.todo-list { padding: 20px 40px }
 
 ol.todo-list li {
     padding: 20px 0 10px;
@@ -60,12 +60,16 @@ ol.todo-list li {
     border-bottom: 1px solid #ddd;
 }
 
-/* span refer to close sign (X) */
 ol.todo-list span {
     float: right;
     font: bold 18px monospace;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
 }
+ol.todo-list span.remove { right: 5px }
+ol.todo-list span.date { right: 50px }
+
 
 /*For Mobile*/
 @media screen and (max-width: 480px) {
@@ -73,6 +77,7 @@ ol.todo-list span {
         width: 100%;
         padding: 40px 10px
     }
+    ol.todo-list span { top: 22px }
 }
 
 /*For Tablet*/
@@ -81,4 +86,5 @@ ol.todo-list span {
         width: 90%;
         margin-bottom: 10px;
     }
+    ol.todo-list span { top: 18px }
 }
